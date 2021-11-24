@@ -37,7 +37,7 @@ jobs:
         pytest test.py
     - name: Install Docker
       run: |
-        apt install docker.io -y
+        sudo apt install docker.io -y
     - name: Push to Dockerhub
       uses: docker/setup-buildx-action@v1.6.0
       with: 
