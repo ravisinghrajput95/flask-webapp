@@ -52,5 +52,5 @@ jobs:
       run: docker build . --file Dockerfile --tag rajputmarch2020/flask-webapp:$GITHUB_SHA
       
     - name: Docker Push
-      run: docker push rajputmarch2020/flask-webapp
+      run: docker push "rajputmarch2020/flask-webapp:$GITHUB_SHA"
       
