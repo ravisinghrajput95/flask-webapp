@@ -63,6 +63,6 @@ jobs:
         dockerfile_directory: ./
         dockerfile_name: Dockerfile
         docker_options: "--no-cache"
-        process_type: gunicorn app:app --log-file -
+        process_type: python app.py runserver
         
       
